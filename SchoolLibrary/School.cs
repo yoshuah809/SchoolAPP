@@ -42,6 +42,12 @@ namespace SchoolLibrary
            Name = SchoolName;
            PhoneNumber = SchoolPhoneNumber; 
         }
+
+        public float Average3Scores(float a, float b, float c)
+        {
+            var result = (a + b + c) / 3;
+            return result;
+        }
     }
       
 }
