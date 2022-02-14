@@ -56,11 +56,13 @@ namespace SchoolLibrary
             var sb = new StringBuilder();
             sb.AppendLine(Name);
             sb.AppendLine(Address);
-            sb.AppendLine(City);
-            sb.AppendLine(", ");
-            sb.AppendLine(State);
-            sb.AppendLine(", ");
+            sb.Append(City);
+            sb.Append(",");
+            sb.Append(State);
+            sb.Append(" ");
             sb.AppendLine(Zip);
+            sb.AppendLine(PhoneNumber);
+            sb.AppendLine(TwitterAddress);
 
             return sb.ToString();
         }

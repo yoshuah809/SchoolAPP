@@ -34,12 +34,12 @@ namespace ShoolFormApp
             try
             {
                 tSchool.TwitterAddress = txtTwitter.Text;
-
             }
             catch (Exception ex)
             {
                 MessageBox.Show(ex.Message);
             }
+            MessageBox.Show(tSchool.ToString());
         }
 
         private void txtCity_TextChanged(object sender, EventArgs e)
