@@ -43,11 +43,28 @@ namespace SchoolLibrary
            PhoneNumber = SchoolPhoneNumber; 
         }
 
-        public float Average3Scores(float a, float b, float c)
-        {
-            var result = (a + b + c) / 3;
-            return result;
-        }
-    }
       
+        //public float Average3Scores(float a, float b, float c)
+        //{
+        //    var result = (a + b + c) / 3;
+        //    return result;
+        //}
+        static float Average3Scores(float a, float b, float c) => (a + b + c) / 3;
+
+        public override string ToString()
+        {
+            var sb = new StringBuilder();
+            sb.AppendLine(Name);
+            sb.AppendLine(Address);
+            sb.AppendLine(City);
+            sb.AppendLine(", ");
+            sb.AppendLine(State);
+            sb.AppendLine(", ");
+            sb.AppendLine(Zip);
+
+            return sb.ToString();
+        }
+
+    }
+
 }
