@@ -6,7 +6,7 @@ using System.Threading.Tasks;
 
 namespace SchoolLibrary
 {
-    class School
+    public class School
     { 
         public string Name { get; set; }
         public string Address { get; set; }
