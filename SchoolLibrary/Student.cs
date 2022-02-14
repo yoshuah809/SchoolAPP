@@ -6,7 +6,10 @@ using System.Threading.Tasks;
 
 namespace SchoolLibrary
 {
-    internal class Student
+    public class Student : Person
     {
+        public enum GradeLevel { Freshman, Sophomore, Junior, Senior}
+        public GradeLevel Level { get; set;}
+       
     }
 }
