@@ -6,11 +6,11 @@ using System.Threading.Tasks;
 
 namespace SchoolLibrary
 {
-    public class Teachers
+    public class Teacher : Person
     {
-        public string FirstName { get; set; }
-        public string LastName { get; set; }
-        public string  Email { get; set; }
         public string Subject { get; set; }
+        
+        //Fix implementation Later
+        public override float ComputeGradeAverage() => 0.0f;
     }
 }

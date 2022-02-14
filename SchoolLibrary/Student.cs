@@ -10,6 +10,12 @@ namespace SchoolLibrary
     {
         public enum GradeLevel { Freshman, Sophomore, Junior, Senior}
         public GradeLevel Level { get; set;}
+
+        public override float ComputeGradeAverage() => 4.0f;
+
+        
        
     }
+
+
 }

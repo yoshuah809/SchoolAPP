@@ -40,10 +40,27 @@ namespace ShoolFormApp
                 MessageBox.Show(ex.Message);
             }
             MessageBox.Show(tSchool.ToString());
+        
+            var student = new Student();
+
+            var teacher = new Teacher(); // remove later, thi is to test only
+        
         }
 
-        private void txtCity_TextChanged(object sender, EventArgs e)
+        private void btnTestTeacher_Click(object sender, EventArgs e)
         {
+            var teacher = new Teacher();
+            var gp = teacher.ComputeGradeAverage();
+
+            MessageBox.Show($"The Teacher Grade Average is {gp}");
+        }
+
+        private void btnTestStudent_Click(object sender, EventArgs e)
+        {
+            var student = new Student();
+            var gp = student.ComputeGradeAverage();
+
+            MessageBox.Show($"The Student Grade Average is {gp}");
 
         }
     }
