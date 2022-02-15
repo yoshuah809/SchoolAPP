@@ -13,8 +13,14 @@ namespace SchoolLibrary
 
         public override float ComputeGradeAverage() => 4.0f;
 
-        
-       
+        public override string SendMessage(string message)
+        {
+            var original = base.SendMessage(message);
+            var sb = new StringBuilder();
+            sb.AppendLine("This Message is private and confidential");
+            return sb.ToString();   
+        }
+
     }
 
 
